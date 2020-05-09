@@ -7,7 +7,7 @@ workflows:
     jobs: 
       - 
         gradle/run: 
-          run_command: "clean build"
+          command: "clean build"
       - gradle/test
           
 
