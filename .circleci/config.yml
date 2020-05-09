@@ -4,5 +4,8 @@ version: 2.1
 workflows:
   checkout-build-test:
     jobs:
+      - gradle/run
+          command: clean build
       - gradle/test
+          
 
