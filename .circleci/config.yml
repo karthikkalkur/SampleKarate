@@ -1,11 +1,13 @@
-orbs:
+--- 
+orbs: 
   gradle: circleci/gradle@2.1
 version: 2.1
-workflows:
-  checkout-build-test:
-    jobs:
-      - gradle/run
-          command: clean build
+workflows: 
+  checkout-build-test: 
+    jobs: 
+      - 
+        gradle/run: 
+          run_command: "clean build"
       - gradle/test
           
 
